@@ -44,11 +44,6 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Future<void> _facebookSignIn(UserProvider provider) async {
-    AccessToken? accessToken = await FacebookAuth.instance.accessToken;
-    if (accessToken != null) {
-      await FacebookAuth.instance.logOut();
-      print('User signed out');
-    }
     try {
       final LoginResult result = await FacebookAuth.instance.login();
       print('facebook login result: $result');

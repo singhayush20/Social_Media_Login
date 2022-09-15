@@ -91,15 +91,6 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(
               height: screenHeight * 0.1,
             ),
-            // Container(
-            //   height: screenHeight * 0.3,
-            //   child: ClipRRect(
-            //     borderRadius: BorderRadius.circular(40),
-            //     child: SizedBox.fromSize(
-            //       child: provider.image,
-            //     ),
-            //   ),
-            // ),
             Container(
               height: screenHeight * 0.3,
               child: FittedBox(
